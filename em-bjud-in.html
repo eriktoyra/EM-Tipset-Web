@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="sv" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <title>Bjud in deltagare till EM Tipset™</title>
+        <meta name="viewport" content="width=768, minimum-scale=1.0, maximum-scale=1.0" />
+        <link href="css/reset.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- // START CSS by Erik -->
+        <link href="css/extra.css" rel="stylesheet" />
+        <!-- // END CSS by Erik -->
+        <script src="http://emtipset.dev.stendahls.se/Scripts/modernizr-2.5.3.js"></script>
+    </head>
+    <body>
+<header>
+    <div class="wrapper nav-utility-wrapper">
+    <ul class="nav nav-utility">
+            <li class="nav-item icon-username">Inloggad som <a class="username" href="/Account/ChangePassword">apitest</a></li>
+            <!--li class="nav-item"><a href="/Account/LogOff">Logga ut</a></li-->
+            <li class="nav-item">
+                <div id="nav-settings" class="icon-settings">
+                    <div id="nav-settings-content">
+                        <ul class="nav nav-vertical nav-settings">
+                                <li class="nav-item icon-email">E-post <span class="email">magnus_unger@hotmail.com</span></li>
+                            <li class="nav-item"><a href="http://www.facebook.com/groups/219951568114692/" class="icon-external-link" title="EM Tipset&trade;s Facebook-grupp">EM Tipset&trade;s Facebook-grupp</a></li>
+                            <li class="nav-item"><a Title="Logga ut" href="/Account/LogOff">Logga ut</a></li>
+                        </ul>
+                        <div>
+                            <img src="/Content/images/iphone-app.png" alt="EM Tipset&trade; iPhone App" />
+                            <p><strong>Ladda ner iPhone-Appen!</strong><br />
+                                Surfa in på EM Tipset från din mobil och följ sedan <a href="#">denna länk!</a></p>
+                            <ul>
+                                <!--<li><a href="#" title="Återställ hjälp" class="button button-reset-help">Återställ hjälp</a></li>-->
+                                <li><a class="button button-rules" href="/Home/Rules" title="Regler">Regler</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+    </ul>
+</div>
+
+    <nav class="wrapper nav-main-wrapper">
+        <ul class="nav nav-main">
+		
+            <li class="nav-item"><a class="" href="/">Tips</a></li>
+            <!--<li class="nav-item"><a class="" href="/Home/Ranking">Ranking</a></li>-->
+            <li class="nav-item"><a class="disabled">Ranking<span class="round-closed"></span></a></li>
+            <li id="leagues" class="nav-item">
+			<!--
+                <select>
+                    <option>Huvudligan</option>
+                </select>
+				-->
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="wrapper main-wrapper">
+    
+
+<!-- // START edit by Erik -->
+<section class="main-section">
+    <div class="header-wrapper">
+        <header class="main-content">
+            <h1>Bjud in deltagare till EM Tipset</h1>
+        </header>
+    </div>    
+    <div class="main-content">
+        <form action="/Invitation" method="post">		
+            <div id="invitation">
+    	 		<ol class="invitation-form">
+    				<li>
+    					<label for="RecipientEmail">Till e-post</label>
+    					<input data-val="true" data-val-required="Fältet 'Till e-post' måste fyllas i." id="RecipientEmail" name="RecipientEmail"type="text" value="" />
+    				</li>
+    				<li>
+    					<label for="Message">H&#228;lsning</label>
+    					<textarea cols="20" id="Message" name="Message" placeholder="Skriv meddelande till din kompis här..." rows="2"></textarea>
+    				</li>
+    			</ol>
+    			<div id="error"></div>
+    			<div>
+    				<button type="submit" id="send-invitation" class="default right">Skicka inbjudan</button>
+    			</div>
+    		</div>
+        </form>
+
+        <table id="my-invitations" class="full-width with-borders layout-alt-2">
+            <thead>
+                <tr>
+                    <th class="email">Mina inbjudningar</th>
+                    <th class="date">Skickad</th>
+                    <th class="registered">Registrerat sig?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>example@example.com</td>
+                    <td>den 27 maj 2012</td>
+                    <td class="registered"><span>Ja</span></td>
+                </tr>
+                <tr>
+                    <td>example@example.com</td>
+                    <td>den 27 maj 2012</td>
+                    <td class="registered"><span>Ja</span></td>
+                </tr>
+                <tr>
+                    <td>example@example.com</td>
+                    <td>den 27 maj 2012</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>example@example.com</td>
+                    <td>den 27 maj 2012</td>
+                    <td class="registered"><span>Ja</span></td>
+                </tr>
+                <tr>
+                    <td>example@example.com</td>
+                    <td>den 27 maj 2012</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>example@example.com</td>
+                    <td>den 27 maj 2012</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>example@example.com</td>
+                    <td>den 27 maj 2012</td>
+                    <td class="registered"><span>Ja</span></td>
+                </tr>
+                <tr>
+                    <td>example@example.com</td>
+                    <td>den 27 maj 2012</td>
+                    <td class="registered"><span>Ja</span></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</section>
+<!-- // END edit by Erik -->
+</div>
+<footer>
+
+	<div class="wrapper main-wrapper footer-header"></div>
+	<div class="wrapper">
+		<div class="main-content">
+			<nav>
+				<ul>
+					<li><a href="/Home/Rules">Regler</a></li>
+					<li><a href="/Invitation">Bjud in en kompis</a></li>
+					<li><a href="/Account/ChangePassword">Byt l&#246;senord</a></li>
+					<li><a href="/Account/LogOff">Logga ut</a></li>
+					<li>© 2012 EM 2012</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+</footer>
+
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/Scripts/jquery-1.7.2.min.js"><\/script>')</script>
+        
+    <script src="/Scripts/tips.js"></script>
+    
+
+    </body>
+</html>

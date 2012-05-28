@@ -1,0 +1,182 @@
+/* =Block */
+p {
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+table { 
+    border: 0;
+    margin-bottom: 1.5em; 
+}
+table.one-third { width: 33.33333333%; }
+table.two-third { width: 66.66666667%; }
+table.full-width { width: 100%; }
+
+caption {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: rgba(188, 189, 200, 0.3);
+}
+
+th { 
+    font-weight: bold;
+    text-align: left;
+}
+
+table.layout-alt-2 thead th {
+    background: #2b2b2b url(images/pattern-black.png);
+    border-right: 1px dotted #a5b6b8;
+    color: #fff;
+}
+
+table.layout-alt-2 thead th:last-child {
+    border-right: 0;
+}
+
+td, th { padding: 0.5em; }
+
+th.centered {
+    text-align: center;
+}
+
+table.with-borders tr {
+    border-bottom: 1px solid #bcc7c8;
+}
+
+table.with-borders tr:last-child {
+    border-bottom: 0;
+}
+
+table.with-borders td {
+    border-right: 1px solid #a5b6b8;
+}
+
+table.with-borders td:last-child {
+    border-right: 0;
+}
+
+td.registered {
+    background: url(../images/checkbox-green-1x.png) center center no-repeat;
+}
+
+td.registered > span {
+    display: none;
+}
+
+.main-section ul, 
+.main-section ol { 
+    margin: 0.5em 0 1.5em 0;
+    padding-left: 18px;
+}
+
+.main-section ol { padding-left: 21px; }
+
+.main-section ul li, 
+.main-section ol li {
+    list-style-type: square;
+    margin-bottom: 0.5em;    
+    padding-left: 5px;
+}
+
+.main-section ol li {
+    list-style-type: decimal;
+}
+
+button.default {
+    width: auto;
+    display: inline-block;
+    padding: 15px 40px;
+}
+
+button.default.left {
+    float: left;
+}
+
+button.default.right {
+    float: right;
+}
+
+/* =Inline */
+strong {
+    font-weight: bold;
+}
+
+/* =Layout */
+.main-section > .header-wrapper {
+    background: #2b2b2b url(images/pattern-black.png);
+    line-height: 28px;    
+    padding: 11px 0;
+}
+
+header.main-content > h1 {
+    color: #fff;
+    display: inline-block;    
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 15px 0 35px;
+}
+
+.main-section > .main-content { padding-top: 35px; }
+.main-section > .main-content.text > * {	
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.main-section > .main-content > h2 { font-size: 16px; }
+
+.section-with-icon {
+    padding-left: 38px;
+}
+
+.section-with-icon.clock {
+    background: url(../images/clock-1x.png) 0 3px no-repeat;
+}
+
+table#my-invitations th,
+table#my-invitations td {
+    text-align: center;
+}
+
+table#my-invitations th:first-child,
+table#my-invitations td:first-child {
+    text-align: left;
+}
+
+/* TODO: Remove identical selectors and definitions from styles.css but keep this one. */
+#my-invitations th, #my-invitations td {
+    border-bottom: 0;
+    line-height: 1;
+    padding: 0.8216em 0.5em;
+}
+
+/* TODO: Remove identical selectors and definitions from styles.css and then remove the ones below. */
+/* START remove */
+#my-invitations {
+    font-size: inherit;
+    margin-top: 0;
+    text-align: left;
+    width: 100%;
+}
+
+#my-invitations tbody tr:nth-child(odd) {
+    background: rgba(188, 199, 200, 0.3);
+}
+/* END remove */
+
+/* =Helpers */
+.message.note {
+    background-color: #f7dac2;
+    border: 1px solid #c18e63;
+    border-radius: 5px;
+    color: #333;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.message > em {
+    color: #b73b1d;
+}
+   
