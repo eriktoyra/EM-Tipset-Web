@@ -69,10 +69,10 @@
     <div class="main-content">
         <form action="/Invitation" method="post">		
             <div id="invitation">
-    	 		<ol class="invitation-form">
+    	 		<ol class="default-form">
     				<li>
-    					<label for="RecipientEmail">Till e-post</label>
-    					<input data-val="true" data-val-required="Fältet 'Till e-post' måste fyllas i." id="RecipientEmail" name="RecipientEmail"type="text" value="" />
+    					<label id="to-email" for="RecipientEmail">Till e-post</label>
+    					<input data-val="true" data-val-required="Fältet 'Till e-post' måste fyllas i." id="RecipientEmail" name="RecipientEmail"type="text" placeholder="Din kompis e-postadress fyller du i här..." value="" />
     				</li>
     				<li>
     					<label for="Message">H&#228;lsning</label>
@@ -80,9 +80,7 @@
     				</li>
     			</ol>
     			<div id="error"></div>
-    			<div>
-    				<button type="submit" id="send-invitation" class="default right">Skicka inbjudan</button>
-    			</div>
+   				<button type="submit" id="send-invitation" class="default right">Skicka inbjudan</button>
     		</div>
         </form>
 
